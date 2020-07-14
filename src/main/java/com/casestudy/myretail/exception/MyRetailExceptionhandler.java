@@ -4,7 +4,7 @@
 
 package com.casestudy.myretail.exception;
 
-import com.casestudy.myretail.price.ProductNotFound;
+import com.casestudy.myretail.aggregator.exception.ProductNotFound;
 import java.util.Date;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

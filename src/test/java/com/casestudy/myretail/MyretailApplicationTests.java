@@ -1,13 +1,38 @@
 package com.casestudy.myretail;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class MyretailApplicationTests {
+import com.casestudy.myretail.mongodb.repository.PricingRepository;
+import com.casestudy.myretail.pricingdetails.model.Pricing;
+import com.casestudy.myretail.pricingdetails.service.PricingService;
+import org.junit.Assert;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.junit.MockitoJUnitRunner;
+
+@RunWith(MockitoJUnitRunner.class)
+public class MyretailApplicationTests {
+
+    /*@Test
+    void contextLoads() {
+    }*/
+
+    @InjectMocks
+    private PricingService pricingService = new PricingService();
+
+    @Mock
+    private PricingRepository pricingRepository;
 
     @Test
-    void contextLoads() {
+    public void findPricingByProductId() {
+        Pricing pricing = new Pricing();
+        pricing.setOfferPricePrice("100");
+        Mockito.when(pricingRepository.findPricingByProductId(Mockito.anyString())).thenReturn(pricing);
+        Pricing pricingNew = pricingService.findPricingbyproductId("");
+        Assert.assertEquals("100", pricingNew.getOfferPricePrice());
     }
+
 
 }
