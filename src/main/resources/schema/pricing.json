@@ -1,0 +1,125 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "examples": [
+    {
+      "partNumber": "33333333",
+      "listPrice_price": "34.49",
+      "listPrice_formattedPrice": "$22.4",
+      "offerPrice_startDate": "1576742400000",
+      "offerPrice_price": "21.49",
+      "offerPrice_formattedPrice": "$15.49",
+      "offerPrice_saveDollar": "0",
+      "offerPrice_endDate": "253402214400000",
+      "offerPrice_savePercent": "59"
+    }
+  ],
+  "required": [
+    "partNumber",
+    "listPrice_price",
+    "listPrice_formattedPrice",
+    "offerPrice_startDate",
+    "offerPrice_price",
+    "offerPrice_formattedPrice",
+    "offerPrice_saveDollar",
+    "offerPrice_endDate",
+    "offerPrice_savePercent"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "partNumber": {
+      "$id": "#/properties/partNumber",
+      "type": "string",
+      "title": "The partNumber schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "33333333"
+      ]
+    },
+    "listPrice_price": {
+      "$id": "#/properties/listPrice_price",
+      "type": "string",
+      "title": "The listPrice_price schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "34.49"
+      ]
+    },
+    "listPrice_formattedPrice": {
+      "$id": "#/properties/listPrice_formattedPrice",
+      "type": "string",
+      "title": "The listPrice_formattedPrice schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "$22.4"
+      ]
+    },
+    "offerPrice_startDate": {
+      "$id": "#/properties/offerPrice_startDate",
+      "type": "string",
+      "title": "The offerPrice_startDate schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "1576742400000"
+      ]
+    },
+    "offerPrice_price": {
+      "$id": "#/properties/offerPrice_price",
+      "type": "string",
+      "title": "The offerPrice_price schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "21.49"
+      ]
+    },
+    "offerPrice_formattedPrice": {
+      "$id": "#/properties/offerPrice_formattedPrice",
+      "type": "string",
+      "title": "The offerPrice_formattedPrice schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "$15.49"
+      ]
+    },
+    "offerPrice_saveDollar": {
+      "$id": "#/properties/offerPrice_saveDollar",
+      "type": "string",
+      "title": "The offerPrice_saveDollar schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "0"
+      ]
+    },
+    "offerPrice_endDate": {
+      "$id": "#/properties/offerPrice_endDate",
+      "type": "string",
+      "title": "The offerPrice_endDate schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "253402214400000"
+      ]
+    },
+    "offerPrice_savePercent": {
+      "$id": "#/properties/offerPrice_savePercent",
+      "type": "string",
+      "title": "The offerPrice_savePercent schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "59"
+      ]
+    }
+  }
+}
